@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: azure;
+}
+
+.upload-file {
+  margin: auto;
+  font-weight: 700;
+  width: 60%;
+  font-size: 1.1rem;
+  color: rgb(244, 241, 241);
+  background-color: rgb(5, 4, 68);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 6vh;
+  padding: 5px;
+  border-radius: 4px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media screen and (max-width: 270px) {
+  .upload-file {
+    width: 80%;
+  }
+}
+
+#foto-file {
+  display: none;
+}
+
+.image-container {
+  position: relative;
+  width: 60%;
+  height: 50vh;
+  text-align: center;
+  /* border: 1px solid red; */
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 4vh;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  /* border: 1px solid black; */
+  height: 100%;
+}
+
+.buttons {
+  width: 50%;
+  height: 25vh;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4px;
+  /* border: 1px solid black; */
+}
+
+.buttons button {
+  width: 8vw;
+  font-size: 0.9rem;
+  height: 25%;
+  font-weight: 500;
+  background-color: rgb(10, 225, 10);
+  border-radius: 4px;
+  min-width: auto;
+  margin: 1.4vw;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background-color: rgb(7, 169, 7);
+}
+
+.download {
+  /* border: 1px solid black; */
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.download button {
+  width: 15%;
+  height: 60%;
+  margin-left: 46%;
+  margin-right: 46%;
+  background-color: crimson;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: wheat;
+  border-radius: 4px;
+  min-width: 93px;
+}
+
+.download button:hover {
+  cursor: pointer;
+  background-color: rgb(114, 7, 28);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  font-size: 1.2rem;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 700;
+}
+
+label input {
+  display: none;
+}
+
+main .jpg-upload {
+  font-size: 1.3rem;
+  color: rgb(244, 241, 241);
+  background-color: rgb(5, 4, 68);
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+main .disp {
+  margin-top: 4vh;
+  display: none;
+}
+
+.secondPage {
+  position: fixed;
+  inset: auto 2rem 1rem auto;
+  height: 4vh;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondPage a {
+  text-decoration: none;
+  color: black;
+}
+
+.firstPage {
+  position: fixed;
+  inset: 1rem auto auto 2rem;
+  height: 4vh;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstPage a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 634px) {
+  .download {
+    margin-bottom: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+      height: 30vh;
+      width: 86%;
+      margin-left: 7%;
+      margin-right: 7%;
+    }
+    .buttons {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 4vh;
+    }
+    .buttons button {
+      width: 23vw;
+    }
+  }
+
+  @media screen and (max-width: 280px) {
+    .image-container {
+      height: 30vh;
+      width: 86%;
+      margin-left: 7%;
+      margin-right: 7%;
+    }
+    .buttons {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 4vh;
+    }
+    .buttons button {
+      width: 28vw;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .buttons button {
+      width: 12vw;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .buttons button {
+      width: 15vw;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .buttons button {
+      width: 19vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image-container {
+      height: 30vh;
+      width: 86%;
+      margin-left: 7%;
+      margin-right: 7%;
+    }
+    .buttons {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 4vh;
+    }
+    .buttons button {
+      width: 23vw;
+    }
+  }
+
+@media screen and (max-width: 412px) {
+    .buttons button {
+      width: 24vw;
+    }
+}

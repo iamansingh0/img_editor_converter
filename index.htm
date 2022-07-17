@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>IMAGE EDITOR</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="upload-file" id="fileUpload">
+            <input id="foto-file" type="file">
+            Select Image
+        </div>
+        <div class="image-container">
+            <img id="foto-image" class="image"/>
+        </div>
+        <div class="buttons">
+            <button class="operation-btn" onclick="makeGrayScale()">
+                GrayScale
+            </button>
+            <button class="operation-btn" onclick="makeBrighter()">
+                Brighter
+            </button>
+            <button class="operation-btn" onclick="makeDark()">
+                Darker
+            </button>
+            <button class="operation-btn" onclick="makeBlur()">
+                Blur
+            </button>
+            <button class="operation-btn" onclick="makeEmboss()">
+                Emboss
+            </button>
+            <button class="operation-btn" onclick="makeSharp()">
+                Sharp
+            </button>
+        </div>
+        <div class="download">
+            <button class="operation-btn" onclick="download()">Download</button>
+        </div>
+        <button class="secondPage">
+            <a href="converter.htm">
+                Jpg to Png Image Type Converter
+            </a>
+        </button>
+        <script src="main.js"></script>
+        <script src="https://rawcdn.githack.com/kousik19/foto.js/d604b02c69b6f037875bc4a3050b85d776dc4659/foto.js"></script>
+    </body>
+</html>
